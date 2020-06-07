@@ -32,7 +32,7 @@ console.log("hello i can run js through my web browser's console");
  alert(course);
  /* TASK5*/
  var demo="pizza";
-alert(demo+'\n'+demo.split("a")+"\n"+demo.split("za")+"\n"+demo.split("zza")+"\n"+demo.split("izza"));
+alert(demo+'\n'+demo.split("a").join(" ")+"\n"+demo.split("za").join(" ")+"\n"+demo.split("zza").join(" ")+"\n"+demo.split("izza").join(" "));
 /*TASK6*/
 var email="safisaqlain@gmail.com";
 alert("My email address is "+email);
@@ -437,6 +437,85 @@ narr.unshift("printer");
 alert("narr");
 document.write("Chapter 14-16 task15");
 var arri=['samsung','nokia'];
-document.write("<select><option>"+arri[0]+"</option><option>"+arri[1]+"</option</select>")
+document.write("<select><option>"+arri[0]+"</option><option>"+arri[1]+"</option</select>");
 
+alert("Chapter 17-20 task1");
+var arrm=[[],[]];
+alert("Chapter 17-20 task2");
+var multiarray=[[0,1,2,3],[1,0,1,2],[2,1,0,1]];
+alert(multiarray[0].join(" ")+"\n"+multiarray[1].join(" ")+"\n"+multiarray[2].join(" "));
 
+document.write("<h3>Chapter 17-20 task3</h3>");
+for(var v=1;v<11;v++){
+  document.write(v+"<br>")
+}
+
+document.write("<h3>Chapter 17-20 task4</h3>");
+ var numinput=prompt("Enter any no to create a table of it :");
+ var tablelength=prompt("Enter length for table : ");
+ for (var i=1;i<=tablelength;i++){
+   document.write(numinput+"x"+i+"="+(i*numinput)+"<br>");
+ }
+ document.write("<h3>Chapter 17-20 task5</h3>");
+ var fruits=['apple','banana','mango','strawberry'];
+ for(var i=0;i<fruits.length;i++){
+   document.write(fruits[i]+"<br>");
+ }
+ for(var i=0;i<fruits.length;i++){
+  document.write("Element at index"+i+" is "+fruits[i]+"<br>");
+}
+
+document.write("<h3>Chapter 17-20 task6</h3>");
+var counting=[];
+var reverse=[];
+var even=[];
+var odd=[];
+var series=[];
+for (var i=1;i<16;i++){
+counting.push(i)
+}
+for(var i=15;i>=1;i--){
+reverse.push(i)
+}
+for (var i=0;i<=20;i++){
+if(i%2===0){
+even.push(i)
+}
+}
+for (var i=0;i<=20;i++){
+if(i%2!=0){
+odd.push(i)
+}
+}
+for (var i=1;i<=10;i++){
+
+series.push((i*2)+"k ");
+}
+document.write("counting: "+counting+"<br>"+"reverse: "+reverse+"<br>even: "+even+"<br>odd: "+odd+"<br>series: "+series);
+alert("chapter 17-20 task7")
+var a =['cake','applepie','cookie','patties','chips'];
+var inputitem=prompt("Enter item to search");
+for (var i=0;i<a.length;i++){
+if (inputitem===a[i]){
+alert(inputitem+" is found at "+i+" index");
+break;
+}
+if(i===a.length-1){
+alert("item is not found inthis list");
+}
+}
+alert("chapter 17-20 task8")
+var a=[24,53,74,91,12];
+alert("Array items are :"+a+"\nlargest no in the array is :"+(a.sort()[a.length-1]))
+alert("chapter 17-20 task9")
+var a=[24,53,74,91,12];
+alert("Array items are :"+a+"\nsmallest no in the array is :"+(a.sort()[0]))
+
+alert("chapter 17-20 task10")
+var result=[];
+for (var o=1;o<=100;o++){
+  if(o%5===0){
+result.push(o);
+  }
+}
+alert(result);
