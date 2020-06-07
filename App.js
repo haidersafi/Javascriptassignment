@@ -407,3 +407,36 @@ colorarray.pop();
 document.write("after deleting last element in array:"+colorarray);
 var colorindex=prompt("At what index you want to add color on (ranging from 0 to "+(colorarray.length-1))");
 var colorname=prompt("which color you want to add");
+colorarray.splice(colorindex,0,colorname);
+document.write("<br> after adding : "+colorarray);
+var colordelindex=prompt("At what index you want to add color on (ranging from 0 to "+(colorarray.length-1))");
+var colordelcount=prompt("How many colors you want to delete from "+colorarray.length+" colors");
+colorarray.splice(colordelindex,colordelcount);
+document.write("<br> after deleting : "+colorarray);
+alert("Chapter 14-16 task10");
+var arr=[320,200,210];
+alert("unsorted scores: "+arr);
+alert("sorted scoresarray: "+(arr.sort()));
+alert("Chapter 14-16 task11");
+var citieslist=['karachi','lahore','quetta','sialkot'];
+var selectedcities=citieslist.slice(0,3);
+document.write("citieslist: "+citieslist+"<br>selected cities list: "+selectedcities);
+alert("Chapter 14-16 task12");
+var array=['this','is','my','cat'];
+alert(array.join(" "));
+alert("Chapter 14-16 task13");
+var newarr=[];
+newarr.push("keyboard");
+newarr.push("mouse");
+alert("newarr");
+
+alert("Chapter 14-16 task14");
+var narr=[];
+narr.unshift("monitor");
+narr.unshift("printer");
+alert("narr");
+document.write("Chapter 14-16 task15");
+var arri=['samsung','nokia'];
+document.write("<select><option>"+arri[0]+"</option><option>"+arri[1]+"</option</select>")
+
+
